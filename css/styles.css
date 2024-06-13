@@ -7,12 +7,13 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  color: #333;
 }
 
+/* Header Beginning */
 .header {
-  background: #0056b3;
+  background: #fff; /* White background */
   padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
 }
 
 .navbar {
@@ -24,29 +25,112 @@ body {
   padding: 0 1rem;
 }
 
+.navLeft {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .navLogo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: #004fa3; /* Year Up's primary blue */
+  display: flex;
+  align-items: center;
+  padding-left: 1rem; /* Adjust padding to move closer to the edge */
+}
+
+.logo {
+  width: 100px; /* Set width to 100px */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navCenter {
+  flex: 1;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004fa3; /* Year Up's primary blue */
+  text-decoration: none;
 }
 
 .navMenu {
   list-style: none;
   display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding-left: 4rem; /* Move closer to the right edge */
 }
 
 .navItem {
-  margin-left: 2rem;
+  margin-left: 1rem; /* Reduce the space between items */
+  position: relative;
 }
 
 .navLink {
-  color: #fff;
+  color: #004fa3; /* Year Up's primary blue */
   text-decoration: none;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navLink:hover {
-  color: #ffcc00;
+  background-color: #ffb500; /* Year Up's gold */
+  color: #fff; /* White text on hover */
+  border-radius: 4px;
+}
+
+/* Header End */
+/* Home Hero Section */
+.homeHero {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homeHeroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.homeHeroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.homeHeroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.homeHeroTitle {
+  font-size: 3rem;
+  color: #ffb500; /* Year Up's gold */
+  margin-bottom: 1rem;
+}
+
+.homeHeroText {
+  font-size: 1.5rem;
+  color: #fff; /* White text */
 }
 
 .hero {
