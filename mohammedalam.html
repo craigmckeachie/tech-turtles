@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Cat Placeholder</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <style>
+      #cat-image {
+        display: block;
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Random Cat Placeholder</h1>
+      <label for="type-dropdown">Choose a type:</label>
+      <select id="type-dropdown">
+        <option value="/cat">Random Cat</option>
+        <option value="/cat/gif">Random Cat GIF</option>
+        <option value="/cat/says/Hello">Cat Saying "Hello"</option>
+        <option value="/cat/says/Hello?fontSize=20&fontColor=blue">Cat Saying "Hello" with Style</option>
+        <option value="/cat?type=small">Small Cat</option>
+        <option value="/cat?type=medium">Medium Cat</option>
+        <option value="/cat?filter=mono">Monochrome Cat</option>
+        <option value="/cat?filter=negate">Negative Cat</option>
+        <option value="/cat?width=400">Cat with Width 400</option>
+        <option value="/cat?height=400">Cat with Height 400</option>
+      </select>
+      <button id="add-cat-button">Add Cat</button>
+      <img id="cat-image" src="" alt="Cat Placeholder" />
+    </main>
+
+    <script>
+      document.querySelector("#add-cat-button").addEventListener("click", function () {
+        const dropdown = document.querySelector("#type-dropdown");
+        const selectedType = dropdown.value;
+        const imageUrl = `https://cataas.com${selectedType}`;
+        const imgElement = document.querySelector("#cat-image");
+        imgElement.src = imageUrl;
+      });
+    </script>
+  </body>
+</html>
