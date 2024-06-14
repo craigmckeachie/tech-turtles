@@ -182,7 +182,7 @@ body {
 
 .homeHeroTestimonialName {
   font-size: 1.5rem;
-  color: #004fa3; /* Year Up's primary blue */
+  color: #004fa3;
   margin-bottom: 0.5rem;
 }
 
@@ -199,7 +199,7 @@ body {
 
 /* Home Hero Footer */
 .homeHeroFooter {
-  background: #01366e; /* Year Up's primary blue */
+  background: #01366e;
   color: #fff;
   padding: 2rem 1rem;
   text-align: center;
@@ -266,7 +266,7 @@ body {
 
 .profileCardName {
   font-size: 1.2rem;
-  color: #004fa3; /* Year Up's primary blue */
+  color: #004fa3;
   margin: 0.5rem 0;
 }
 
@@ -295,7 +295,7 @@ body {
 }
 
 .profileCardButton:hover {
-  background-color: #004fa3; /* Year Up's primary blue */
+  background-color: #004fa3;
 }
 
 .profileCardLinks {
@@ -312,225 +312,209 @@ body {
 }
 
 .profileCardLink:hover {
-  color: #004fa3; /* Year Up's primary blue */
+  color: #004fa3;
 }
 
-/* 
-.carouselSection {
-  text-align: center;
-  padding: 4rem 1rem;
-}
+/* testimonials */
 
-.carouselContainer {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.carouselTrack {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carouselCard {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 1rem);
-  box-sizing: border-box;
-  margin-right: 1rem;
-  text-align: center;
-}
-
-.carouselCard img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.carouselButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #0056b3;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.carouselButton.prev {
-  left: 10px;
-}
-
-.carouselButton.next {
-  right: 10px;
-}
-
-.carouselButton:hover {
-  background: #ffcc00;
-}
-
-.testimonialSection,
-.profilesSection,
-.contactSection {
-  padding: 4rem 1rem;
-}
-
-.testimonialCards,
-.profileCards {
+.testimonialCardsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 2rem;
 }
 
-.testimonialCard,
-.profileCard {
+.testimonialCard {
   background: #fff;
   border: 1px solid #ddd;
-  padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 1rem);
-  box-sizing: border-box;
-  text-align: center;
+  margin: 0.5rem;
+  padding: 1rem;
+  width: calc(33.33% - 1rem); /* Adjust width to fit three per row */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.profileCard img {
-  width: 100%;
+.testimonialContent {
+  flex-grow: 1;
+}
+
+.testimonialQuote {
+  margin-bottom: 0.5rem;
+}
+
+.quoteIcon {
+  width: 20px; /* Smaller size for the icon */
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #ffcc00;
+.testimonialText {
+  font-size: 1rem;
   color: #333;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
-.btn:hover {
-  background: #ff9900;
-}
-
-.contact form {
+.testimonialFooter {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.contact label {
-  margin-bottom: 0.5rem;
-  color: #0056b3;
+.testimonialImage {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 0.5rem;
 }
 
-.contact input,
-.contact textarea {
+.testimonialName {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #004fa3;
+}
+
+.testimonialsHeader {
+  text-align: center;
+  padding: 2rem;
+}
+
+.testimonialsTitle {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 80%;
-  max-width: 500px;
+  background: linear-gradient(to right, #004fa3, #ffb500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.contact button {
-  padding: 0.5rem 1rem;
-  background: #0056b3;
+.testimonialsDescription {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.profilesHeader {
+  text-align: center;
+  padding: 2rem;
+}
+
+.profilesTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #004fa3, #ffb500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profilesDescription {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* contact page */
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.contactFormSection,
+.contactInfoSection {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: calc(50% - 2rem);
+  margin: 1rem 0;
+}
+
+.contactFormTitle,
+.contactInfoTitle,
+.followUsTitle {
+  font-size: 1.5rem;
+  color: #004fa3; /* Year Up's primary blue */
+  margin-bottom: 1rem;
+}
+
+.contactFormDescription,
+.contactInfoDescription {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm textarea {
+  height: 100px;
+}
+
+.contactFormButton {
+  background: #004fa3;
   color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.contact button:hover {
-  background: #ffcc00;
-}
-
-.footer {
-  background: #0056b3;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.footerContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.footerLinks {
-  margin-top: 1rem;
-}
-
-.footerLinks a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1rem;
-}
-
-.footerLinks a:hover {
-  color: #ffcc00;
-}
-
-.instructorsSection {
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-.instructorCards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  align-items: center;
 }
 
-.instructorCard {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: calc(33.333% - 1rem);
-  box-sizing: border-box;
-  text-align: center;
+.contactFormButton i {
+  margin-left: 0.5rem;
 }
 
-.instructorCard img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+.contactInfoList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
-.instructorCard h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.instructorCard p {
+.contactInfoList li {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-.profiles {
-  padding: 4rem 1rem;
-  text-align: center;
-} */
+.socialMediaIcons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.socialMediaLink {
+  color: #004fa3;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.socialMediaLink:hover {
+  color: #ffb500; /* Year Up's gold */
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+}
