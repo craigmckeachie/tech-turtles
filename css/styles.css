@@ -41,8 +41,8 @@ body {
 }
 
 .logo {
-  width: 100px; /* Set width to 100px */
-  height: auto; /* Maintain aspect ratio */
+  width: 100px;
+  height: auto;
 }
 
 .navCenter {
@@ -126,6 +126,7 @@ body {
   font-size: 3rem;
   color: #ffb500;
   margin-bottom: 1rem;
+  padding-top: 8em;
 }
 
 .homeHeroText {
@@ -233,7 +234,88 @@ body {
   color: #fff;
   margin-top: 1rem;
 }
+/* Profile Section */
+.profileCardsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
 
+.profileCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0.5rem 0.2em 0.5em 0.2em;
+  width: calc(20% - 0.4rem);
+  text-align: center;
+}
+
+.profileCardImage {
+  width: 100%;
+  height: auto; /* Adjusted height for better fit */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.profileCardContent {
+  padding: 0.5rem;
+}
+
+.profileCardName {
+  font-size: 1.2rem;
+  color: #004fa3; /* Year Up's primary blue */
+  margin: 0.5rem 0;
+}
+
+.profileCardRole {
+  font-size: 1rem;
+  color: #ffb500; /* Year Up's gold */
+  margin: 0.5rem 0;
+}
+
+.profileCardBio {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.profileCardButton {
+  display: inline-block;
+  background: #ffb500; /* Year Up's gold */
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0.5rem 0.5em 0 0.5em;
+  transition: background-color 0.3s ease;
+}
+
+.profileCardButton:hover {
+  background-color: #004fa3; /* Year Up's primary blue */
+}
+
+.profileCardLinks {
+  margin-top: 0.5rem;
+}
+
+.profileCardLink {
+  display: inline-block;
+  color: #ffb500; /* Year Up's gold */
+  text-decoration: none;
+  margin: 0.3rem;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.profileCardLink:hover {
+  color: #004fa3; /* Year Up's primary blue */
+}
+
+/* 
 .carouselSection {
   text-align: center;
   padding: 4rem 1rem;
@@ -451,4 +533,4 @@ body {
 .profiles {
   padding: 4rem 1rem;
   text-align: center;
-}
+} */
