@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Turtles</title>
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -33,7 +34,11 @@
 
     <main>
       <section class="homeHero">
-        <img src="images/group-photo.JPG" alt="Group Image" class="homeHeroImage" />
+        <img
+          src="images/group-photo.JPG"
+          alt="Group Image"
+          class="homeHeroImage"
+        />
         <div class="homeHeroOverlay"></div>
         <div class="homeHeroContent">
           <h1 class="homeHeroTitle">Welcome to Tech Turtles</h1>
@@ -44,30 +49,74 @@
         </div>
       </section>
 
-      <section class="instructorsSection">
-        <h2>Meet the Instructors</h2>
-        <div class="instructorCards">
-          <div class="instructorCard">
-            <img src="images/craig.jpeg" alt="Instructor 1" />
-            <h3>Main Instructor</h3>
-            <p>Instructor's Message</p>
+      <section class="homeHeroTestimonials">
+        <div class="homeHeroTestimonialsContent">
+          <h2 class="homeHeroTestimonialsTitle">Meet Our Dedicated Team</h2>
+          <p class="homeHeroTestimonialsSubtitle">
+            Our professor, program manager, and essential skills instructor are
+            here to support your journey.
+          </p>
+          <div class="homeHeroTestimonialsGrid">
+            <div class="homeHeroTestimonial">
+              <img
+                src="images/craig.jpeg"
+                alt="Professor Craig McKeachie"
+                class="homeHeroTestimonialImage"
+              />
+              <h3 class="homeHeroTestimonialName">Professor Craig McKeachie</h3>
+              <p class="homeHeroTestimonialRole">
+                Professor of Web Development
+              </p>
+              <p class="homeHeroTestimonialText">
+                "With years of experience in web development, I'm here to help
+                you master the skills you need to succeed in the tech industry."
+              </p>
+            </div>
+            <div class="homeHeroTestimonial">
+              <img
+                src="images/lourdiana.jpeg"
+                alt="Program Manager"
+                class="homeHeroTestimonialImage"
+              />
+              <h3 class="homeHeroTestimonialName">Lourdiana Joseph</h3>
+              <p class="homeHeroTestimonialRole">YProgram Manager</p>
+              <p class="homeHeroTestimonialText">
+                "I am committed to providing the support and guidance you need
+                to navigate your educational journey successfully."
+              </p>
+            </div>
+            <div class="homeHeroTestimonial">
+              <img
+                src="images/gabriel.jpeg"
+                alt="Essential Skills Instructor"
+                class="homeHeroTestimonialImage"
+              />
+              <h3 class="homeHeroTestimonialName">
+                Gabriel CorthonView Gabriel Corthon
+              </h3>
+              <p class="homeHeroTestimonialRole">Essential Skills Instructor</p>
+              <p class="homeHeroTestimonialText">
+                "I focus on enhancing your essential skills, ensuring you are
+                well-prepared for both academic and professional challenges."
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footerContent">
-        <p>&copy; 2024 Tech Turtles. All rights reserved.</p>
-        <div class="footerLinks">
-          <a href="index.html">Home</a>
-          <a href="testimonials.html">Testimonials</a>
-          <a href="project-showcase.html">Profiles</a>
-          <a href="contact.html">Contact</a>
+    <footer class="homeHeroFooter">
+      <div class="homeHeroFooterContent">
+        <div class="homeHeroFooterNav">
+          <a href="index.html" class="footerNavLink">TESTIMONIALS</a>
+          <a href="#about" class="footerNavLink">PROFILES</a>
+          <a href="#contact" class="footerNavLink">CONTACT</a>
         </div>
+        <p class="homeHeroFooterCopy">
+          Thank you for being part of our journey. &copy; 2024 Tech Turtles. All
+          rights reserved.
+        </p>
       </div>
     </footer>
-
-    <script src="scripts/scripts.js"></script>
   </body>
 </html>
