@@ -28,18 +28,54 @@
         width: 100%;
         height: 352px;
       }
-      h3{
+      h3 {
         display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      /* Home Hero Footer */
+      .homeHeroFooter {
+        background: #212529;
+        color: #fff;
+        padding: 2rem 1rem;
+        text-align: center;
+      }
+
+      .homeHeroFooterContent {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .homeHeroFooterNav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+      }
+
+      .footerNavLink {
+        color: #fff;
+        text-decoration: none;
+        margin: 0.5rem 1rem;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+
+      .footerNavLink:hover {
+        color: #ffb500;
+      }
+
+      .homeHeroFooterCopy {
+        font-size: 0.875rem;
+        color: #fff;
+        margin-top: 1rem;
       }
     </style>
   </head>
   <body class="dark-mode">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-       
         <button
           class="navbar-toggler"
           type="button"
@@ -277,6 +313,19 @@
           loading="lazy"
         ></iframe>
       </div>
+      <footer class="homeHeroFooter">
+        <div class="homeHeroFooterContent">
+          <div class="homeHeroFooterNav">
+            <a href="index.html" class="footerNavLink">TESTIMONIALS</a>
+            <a href="#about" class="footerNavLink">PROFILES</a>
+            <a href="#contact" class="footerNavLink">CONTACT</a>
+          </div>
+          <p class="homeHeroFooterCopy">
+            Thank you for being part of our journey. &copy; 2024 Tech Turtles.
+            All rights reserved.
+          </p>
+        </div>
+      </footer>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
