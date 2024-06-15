@@ -1,4 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header Beginning */
+.header {
+  background: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navLeft {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navLogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004fa3;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.navCenter {
+  flex: 1;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004fa3;
+  text-decoration: none;
+}
+
+.navMenu {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding-left: 4rem;
+}
+
+.navItem {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.navLink {
+  color: #004fa3;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #ffb500;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Header End */
+/* Home Hero Section */
+.homeHero {
+  position: relative;
+  height: 100vh;
+  /display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homeHeroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.homeHeroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.homeHeroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.homeHeroTitle {
+  font-size: 3rem;
+  color: #ffb500;
+  margin-bottom: 1rem;
+  padding-top: 8em;
+}
+
+.homeHeroText {
+  font-size: 1.5rem;
+  color: #fff;
+}
+/* hero section end */
+/* Home Hero Testimonials Section */
+.homeHeroTestimonials {
+  background: #f9f9f9;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.homeHeroTestimonialsContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homeHeroTestimonialsTitle {
+  font-size: 2.5rem;
+  color: #004fa3;
+  margin-bottom: 1rem;
+}
+
+.homeHeroTestimonialsSubtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.homeHeroTestimonialsGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.homeHeroTestimonial {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: calc(25% - 1rem); /* Adjust width to fit four per row */
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeHeroTestimonialImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.homeHeroTestimonialName {
+  font-size: 1.5rem;
+  color: #004fa3;
+  margin-bottom: 0.5rem;
+}
+
+.homeHeroTestimonialRole {
+  font-size: 1.2rem;
+  color: #ffb500; /* Year Up's gold */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.homeHeroTestimonialText {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Home Hero Footer */
+.homeHeroFooter {
+  background: #01366e;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.homeHeroFooterContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homeHeroFooterNav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footerNavLink {
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footerNavLink:hover {
+  color: #ffb500;
+}
+
+.homeHeroFooterCopy {
+  font-size: 0.875rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+/* Profile Section */
+.profileCardsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.profileCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0.5rem 0.2em 0.5em 0.2em;
+  width: calc(20% - 0.4rem);
+  text-align: center;
+}
+
+.profileCardImage {
+  width: 100%;
+  height: auto; /* Adjusted height for better fit */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.profileCardContent {
+  padding: 0.5rem;
+}
+
+.profileCardName {
+  font-size: 1.2rem;
+  color: #004fa3;
+  margin: 0.5rem 0;
+}
+
+.profileCardRole {
+  font-size: 1rem;
+  color: #ffb500; /* Year Up's gold */
+  margin: 0.5rem 0;
+}
+
+.profileCardBio {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.profileCardButton {
+  display: inline-block;
+  background: #ffb500; /* Year Up's gold */
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0.5rem 0.5em 0 0.5em;
+  transition: background-color 0.3s ease;
+}
+
+.profileCardButton:hover {
+  background-color: #004fa3;
+}
+
+.profileCardLinks {
+  margin-top: 0.5rem;
+}
+
+.profileCardLink {
+  display: inline-block;
+  color: #ffb500; /* Year Up's gold */
+  text-decoration: none;
+  margin: 0.3rem;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.profileCardLink:hover {
+  color: #004fa3;
+}
+
+/* testimonials */
+
+.testimonialCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.testimonialCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0.5rem;
+  padding: 1rem;
+  width: calc(33.33% - 1rem); /* Adjust width to fit three per row */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonialContent {
+  flex-grow: 1;
+}
+
+.testimonialQuote {
+  margin-bottom: 0.5rem;
+}
+
+.quoteIcon {
+  width: 20px; /* Smaller size for the icon */
+  height: auto;
+}
+
+.testimonialText {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.testimonialFooter {
+  display: flex;
+  align-items: center;
+}
+
+.testimonialImage {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.testimonialName {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #004fa3;
+}
+
+.testimonialsHeader {
+  text-align: center;
+  padding: 2rem;
+}
+
+.testimonialsTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #004fa3, #ffb500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonialsDescription {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.profilesHeader {
+  text-align: center;
+  padding: 2rem;
+}
+
+.profilesTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #004fa3, #ffb500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profilesDescription {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* contact page */
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.contactFormSection,
+.contactInfoSection {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: calc(50% - 2rem);
+  margin: 1rem 0;
+}
+
+.contactFormTitle,
+.contactInfoTitle,
+.followUsTitle {
+  font-size: 1.5rem;
+  color: #004fa3; /* Year Up's primary blue */
+  margin-bottom: 1rem;
+}
+
+.contactFormDescription,
+.contactInfoDescription {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm textarea {
+  height: 100px;
+}
+
+.contactFormButton {
+  background: #004fa3;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.contactFormButton i {
+  margin-left: 0.5rem;
+}
+
+.contactInfoList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.contactInfoList li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.socialMediaIcons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.socialMediaLink {
+  color: #004fa3;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.socialMediaLink:hover {
+  color: #ffb500; /* Year Up's gold */
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
 }

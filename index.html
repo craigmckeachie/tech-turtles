@@ -3,24 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Tech Turtles</title>
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="scotty.html">Scotty</a>
-        <a href="Nathanielb.html">Nathanielb</a>
-        <a href="julien.html">Julien</a>
-        <a href="pooja.html">Pooja</a>
-        <a href="christopher.html">Chris</a>
-        <a href="jason.html">Jason</a>
-        <a href="jahir.html">jahir</a>
-        <a href="denzel.html">Denzel</a>
-        <a href="nedret.html">Nedret</a>
-        <a href="khaleel.html">khaleel</a>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navLeft">
+          <a href="index.html" class="navLogo">
+            <img src="images/yearup-logo.png" alt="Year Up Logo" class="logo" />
+          </a>
+        </div>
+        <div class="navCenter">
+          <a href="index.html" class="pageTitle">Tech Turtles</a>
+        </div>
+        <ul class="navMenu">
+          <li class="navItem">
+            <a href="testimonials.html" class="navLink">Testimonials</a>
+          </li>
+          <li class="navItem">
+            <a href="profile.html" class="navLink">Profiles</a>
+          </li>
+          <li class="navItem">
+            <a href="contact.html" class="navLink">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
+
+    <main>
+      <section class="homeHero">
+        <img
+          src="images/group-photo.JPG"
+          alt="Group Image"
+          class="homeHeroImage"
+        />
+        <div class="homeHeroOverlay"></div>
+        <div class="homeHeroContent">
+          <h1 class="homeHeroTitle">Welcome to Tech Turtles</h1>
+          <p class="homeHeroText">
+            A collaborative community of Year Up students celebrating friendship
+            and showcasing our projects and memories.
+          </p>
+        </div>
+      </section>
+
+      <section class="homeHeroTestimonials">
+        <div class="homeHeroTestimonialsContent">
+          <h2 class="homeHeroTestimonialsTitle">Meet Our Dedicated Team</h2>
+          <p class="homeHeroTestimonialsSubtitle">
+            Our professor, program manager, and essential skills instructor are
+            here to support your journey.
+          </p>
+          <div class="homeHeroTestimonialsGrid">
+            <div class="homeHeroTestimonial">
+              <img
+                src="images/craig.jpeg"
+                alt="Craig McKeachie"
+                class="homeHeroTestimonialImage"
+              />
+              <h3 class="homeHeroTestimonialName">Craig McKeachie</h3>
+              <p class="homeHeroTestimonialRole">
+                Professor of Application Development
+              </p>
+              <p class="homeHeroTestimonialText">
+                "With years of experience in web development, I'm here to help
+                you master the skills you need to succeed in the tech industry."
+              </p>
+            </div>
+            <div class="homeHeroTestimonial">
+              <img
+                src="images/lourdiana.jpeg"
+                alt="Program Manager"
+                class="homeHeroTestimonialImage"
+              />
+              <h3 class="homeHeroTestimonialName">Lourdiana Joseph</h3>
+              <p class="homeHeroTestimonialRole">Program Manager</p>
+              <p class="homeHeroTestimonialText">
+                "I am committed to providing the support and guidance you need
+                to navigate your educational journey successfully."
+              </p>
+            </div>
+            <div class="homeHeroTestimonial">
+              <img
+                src="images/gabriel.jpeg"
+                alt="Essential Skills Instructor"
+                class="homeHeroTestimonialImage"
+              />
+              <h3 class="homeHeroTestimonialName">Gabriel Corthon</h3>
+              <p class="homeHeroTestimonialRole">Essential Skills Instructor</p>
+              <p class="homeHeroTestimonialText">
+                "I focus on enhancing your essential skills, ensuring you are
+                well-prepared for both academic and professional challenges."
+              </p>
+            </div>
+            <div class="homeHeroTestimonial">
+              <img
+                src="images/tiffany-obi.jpeg"
+                alt="Essential Skills Instructor"
+                class="homeHeroTestimonialImage"
+              />
+              <h3 class="homeHeroTestimonialName">Tiffany Obi</h3>
+              <p class="homeHeroTestimonialRole">Essential Skills Instructor</p>
+              <p class="homeHeroTestimonialText">
+                "I focus on enhancing your essential skills, ensuring you are
+                well-prepared for both academic and professional challenges."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="homeHeroFooter">
+      <div class="homeHeroFooterContent">
+        <div class="homeHeroFooterNav">
+          <a href="index.html" class="footerNavLink">TESTIMONIALS</a>
+          <a href="#about" class="footerNavLink">PROFILES</a>
+          <a href="#contact" class="footerNavLink">CONTACT</a>
+        </div>
+        <p class="homeHeroFooterCopy">
+          Thank you for being part of our journey. &copy; 2024 Tech Turtles. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
