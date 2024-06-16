@@ -84,7 +84,6 @@ body {
   border-radius: 4px;
 }
 
-/* Header End */
 /* Home Hero Section */
 .homeHero {
   position: relative;
@@ -133,7 +132,7 @@ body {
   font-size: 1.5rem;
   color: #fff;
 }
-/* hero section end */
+
 /* Home Hero Testimonials Section */
 .homeHeroTestimonials {
   background: #f9f9f9;
@@ -169,7 +168,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  width: calc(25% - 1rem); /* Adjust width to fit four per row */
+  width: calc(25% - 1rem); 
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -191,7 +190,7 @@ body {
 
 .homeHeroTestimonialRole {
   font-size: 1.2rem;
-  color: #ffb500; /* Year Up's gold */
+  color: #ffb500; 
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -289,7 +288,7 @@ body {
 
 .profileCardButton {
   display: inline-block;
-  background: #ffb500; /* Year Up's gold */
+  background: #ffb500; 
   color: #fff;
   padding: 0.3rem 0.5rem;
   border-radius: 4px;
@@ -309,7 +308,7 @@ body {
 
 .profileCardLink {
   display: inline-block;
-  color: #ffb500; /* Year Up's gold */
+  color: #ffb500;
   text-decoration: none;
   margin: 0.3rem;
   font-size: 0.8rem;
@@ -336,7 +335,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0.5rem;
   padding: 1rem;
-  width: calc(33.33% - 1rem); /* Adjust width to fit three per row */
+  width: calc(33.33% - 1rem); 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -351,7 +350,7 @@ body {
 }
 
 .quoteIcon {
-  width: 20px; /* Smaller size for the icon */
+  width: 20px; 
   height: auto;
 }
 
@@ -515,7 +514,7 @@ body {
 }
 
 .socialMediaLink:hover {
-  color: #ffb500; /* Year Up's gold */
+  color: #ffb500; 
 }
 
 .map {
