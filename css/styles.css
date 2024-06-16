@@ -203,19 +203,19 @@ body {
 }
 
 /* Home Hero Footer */
-.homeHeroFooter {
+.footer {
   background: #01366e;
   color: #fff;
   padding: 2rem 1rem;
   text-align: center;
 }
 
-.homeHeroFooterContent {
+.footerContent {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.homeHeroFooterNav {
+.footerNav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -234,7 +234,7 @@ body {
   color: #ffb500;
 }
 
-.homeHeroFooterCopy {
+.footerCopy {
   font-size: 0.875rem;
   color: #fff;
   margin-top: 1rem;
